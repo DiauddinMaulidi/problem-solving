@@ -7,8 +7,9 @@
 <?php
     
     function zeroFuel($distanceToPump, $mpg, $fuelLeft) {
-        // buat varibale untuk mengalikan sisa bensin dikali dengan kecepatan mobil per galon
+        // create a variable to calculate the car's mileage based on the fuel left
         $jarakTempuh = $fuelLeft * $mpg;
+        // check whether it can get to the pump?
         if ( $jarakTempuh == $distanceToPump ) {
             return true;
         } else {
