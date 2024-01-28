@@ -1,21 +1,28 @@
 <?php
     
-    function DnaToRna($str) {
+    function dnaToRna($str) {
+        // hitung jumlah karakter
         $sum = strlen($str);
-        $temp = $str;
+        // buat variable untuk menampung hasilnya
+        $result = "";
 
+        // lakukan perulangan sebanyak jumlah karakter
         for ($i=0; $i < $sum; $i++) {  
-            $result = $temp[$i];
-            if ( $result == "T" ) {
-                $result = "U";
-            } else if ( $result == "U" ) {
-                $result = "T";
+        // lakukan pengkondisian
+            // jika ada karakter yang bernilai T, ganti dengan U
+            if ( $str[$i] == "T" ) {
+                $result .= "U";
+            // dan sebaliknya jika ada karakter yang bernilai U, ganti T
+            } else if ( $str[$i] == "U" ) {
+                $result .= "T";
+            //  selain keduanya jangan diganti apapun
+            } else {
+                $result .= $str[$i];
             }
-            echo $result;
         }
 
-
+        return $result;
     }
-
-    DnaToRna("UUTT");
+    $conversi = dnaToRna("GCAU");
+    echo $conversi;
 ?>
