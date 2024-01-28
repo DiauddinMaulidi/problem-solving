@@ -8,9 +8,9 @@
     
     function zeroFuel($distanceToPump, $mpg, $fuelLeft) {
         // create a variable to calculate the car's mileage based on the fuel left
-        $jarakTempuh = $fuelLeft * $mpg;
+        $mileage = $fuelLeft * $mpg;
         // check whether it can get to the pump?
-        if ( $jarakTempuh == $distanceToPump ) {
+        if ( $mileage == $distanceToPump ) {
             return true;
         } else {
             return false;
