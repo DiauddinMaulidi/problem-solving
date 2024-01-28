@@ -10,15 +10,16 @@
         // create a variable to calculate the car's mileage based on the fuel left
         $mileage = $fuelLeft * $mpg;
         // check whether it can get to the pump?
-        if ( $mileage == $distanceToPump ) {
-            return true;
+        if ( $mileage >= $distanceToPump ) {
+            $result = true;
         } else {
-            return false;
+            $result = false;
         }
+        return $result;
         
     }
 
-    var_dump(zeroFuel(100, 50, 1));
+    var_dump(zeroFuel(69, 24, 5));
 
 
     
