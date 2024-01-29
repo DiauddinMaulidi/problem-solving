@@ -7,7 +7,7 @@
         $result = ( $a + $b + $c ) / $sum;
         // var_dump(number_format($result, 2));
 
-        if ( $result >= 0 and $result < 60 ) {
+        if ( $result >= 0 && $result < 60 ) {
             $grade = "F";
         } else if ( $result >= 60 && $result < 70 ) {
             $grade = "D";
