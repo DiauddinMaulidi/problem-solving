@@ -1,6 +1,7 @@
 <?php
     
     function productArray(array $nums) {
+    // cara saya
     //     $k = [];
     //     $v = 1;
     //     foreach ($nums as $i => $value) {
@@ -15,6 +16,7 @@
     //     var_dump($k);
     //     // return $k;
 
+    // cara keren
         $a = array_product($nums);
         array_map(function($e) use ($a) {
             var_dump($a / $e);
@@ -22,7 +24,6 @@
     }
 
     productArray([1, 2, 3]);
-
 
 
 ?>
